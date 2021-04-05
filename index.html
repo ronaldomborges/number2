@@ -9,7 +9,15 @@
     <style>
         body {
             font: normal 15pt arial;
+            text-align: center;
+            color: black;
 
+        }
+        h2 {
+            color: blue;
+        }
+        div {
+            color: lightblue;
         }
         input {
             width: 80px;
@@ -21,19 +29,14 @@
         #res , #ssres, #dres, #mres {
             margin-top: 20px;
         }
-        @media screen and (max-width: 600px) {
-            #div01 {
-                width: 100%;
-                height: auto;
-            }
+     
 }
 
     </style>
 </head>
 <body>
 
-    <div id="div01">
-        <h1>Treinando JavaScript</h1>
+        <p>Treinando JavaScript</p>
         <h2>Somando</h2>
         <input type="number" name="textn1" id="textn1" placeholder="Digite um número"> +
         <input type="number" name="textn2" id="textn2" placeholder="Digite um número"> <br>
@@ -54,12 +57,12 @@
         <input type="number" name="mtextn2" id="mtextn2" placeholder="Digite um número"> <br>
         <input type="button" value="multiplicar" onclick="multiplicacao()">
         <div id="mres">Resultado </div>
-    </div>
+   
     
 
     <script>
         var bv = window.prompt("Qual é o seu nome?")
-        window.document.getElementsByTagName('h1')[0].innerHTML = `Olá ${bv} seja bem vindo(a), vamos fazer algumas contas!`
+        window.document.getElementsByTagName('p')[0].innerHTML = `Olá ${bv} seja bem vindo(a), vamos fazer algumas contas!`
         function soma() {
             var tn1 = window.document.querySelector("#textn1")
             var tn2 = window.document.querySelector("#textn2")
