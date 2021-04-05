@@ -18,7 +18,7 @@
         input:hover {
             background-color: lightblue;
         }
-        #res {
+        #res , #ssres, #dres , #mres {
             margin-top: 20px;
         }
     </style>
@@ -31,7 +31,23 @@
     <input type="button" value="somar" onclick="soma()">
     <div id="res">Resultado</div>
 
+    <h2>Subtraindo</h2>
+    <input type="number" name="stextn1" id="stextn1" placeholder="Digite um número"> -
+    <input type="number" name="stextn2" id="stextn2" placeholder="Digite um número">
+    <input type="button" value="subtrair" onclick="subtracao()">
+    <div id="ssres">Resultado </div>
 
+    <h2>Dividindo</h2>
+    <input type="number" name="dtextn1" id="dtextn1" placeholder="Digite um número"> /
+    <input type="number" name="dtextn2" id="dtextn2" placeholder="Digite um número">
+    <input type="button" value="dividir" onclick="divisao()">
+    <div id="dres">Resultado </div>
+
+    <h2>Multiplicando</h2>
+    <input type="number" name="mtextn1" id="mtextn1" placeholder="Digite um número"> x
+    <input type="number" name="mtextn2" id="mtextn2" placeholder="Digite um número">
+    <input type="button" value="multiplicar" onclick="multiplicacao()">
+    <div id="mres">Resultado </div>
     
 
     <script>
@@ -43,8 +59,36 @@
             var n2 = Number(tn2.value)
             var s = n1 + n2
             res.innerHTML =`O resultado da soma de ${n1} e ${n2} é igual a ${s}`
+        };
+        function subtracao() {
+            var stn1 = window.document.querySelector("#stextn1");
+            var stn2 = window.document.querySelector("#stextn2");
+            var sres = window.document.querySelector("#ssres")
+            var sn1 = Number(stn1.value);
+            var sn2 = Number(stn2.value);
+            var ss = sn1 - sn2
+            sres.innerHTML =`O resultado  de ${sn1} menos ${sn2} é igual a ${ss}`
+        };
 
-        }
+        function divisao() {
+            var dtn1 = window.document.querySelector("#dtextn1");
+            var dtn2 = window.document.querySelector("#dtextn2");
+            var dres = window.document.querySelector("#dres")
+            var dn1 = Number(dtn1.value);
+            var dn2 = Number(dtn2.value);
+            var ds = dn1 / dn2
+            dres.innerHTML =`O resultado de divisão da ${dn1} por ${dn2} é igual a ${ds}`
+        };
+
+        function multiplicacao() {
+            var mtn1 = window.document.querySelector("#mtextn1")
+            var mtn2 = window.document.querySelector("#mtextn2")
+            var mres = window.document.querySelector("#mres")
+            var mn1 = Number(mtn1.value)
+            var mn2 = Number(mtn2.value)
+            var ms = mn1 * mn2
+            mres.innerHTML =`O resultado da multiplicação de ${mn1} por ${mn2} é igual a ${ms}`
+        };
     </script>
 </body>
 </html>
