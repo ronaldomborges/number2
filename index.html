@@ -31,6 +31,7 @@
     </style>
 </head>
 <body>
+
     <div id="div01">
         <h1>Treinando JavaScript</h1>
         <h2>Somando</h2>
@@ -57,6 +58,8 @@
     
 
     <script>
+        var bv = window.prompt("Qual é o seu nome?")
+        window.document.getElementsByTagName('h1')[0].innerHTML = `Olá ${bv} seja bem vindo(a), vamos fazer algumas contas!`
         function soma() {
             var tn1 = window.document.querySelector("#textn1")
             var tn2 = window.document.querySelector("#textn2")
