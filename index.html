@@ -21,33 +21,39 @@
         #res , #ssres, #dres, #mres {
             margin-top: 20px;
         }
+        @media screen and (max-width: 600px) {
+            #div01 {
+                width: 100%;
+                height: auto;
+            }
+}
+
     </style>
 </head>
 <body>
-    <h1>Treinando JavaScript</h1>
-    <h2>Somando</h2>
-    <input type="number" name="textn1" id="textn1" placeholder="Digite um número"> +
-    <input type="number" name="textn2" id="textn2" placeholder="Digite um número">
-    <input type="button" value="somar" onclick="soma()">
-    <div id="res">Resultado</div>
-
-    <h2>Subtraindo</h2>
-    <input type="number" name="stextn1" id="stextn1" placeholder="Digite um número"> -
-    <input type="number" name="stextn2" id="stextn2" placeholder="Digite um número">
-    <input type="button" value="subtrair" onclick="subtracao()">
-    <div id="ssres">Resultado </div>
-
-    <h2>Dividindo</h2>
-    <input type="number" name="dtextn1" id="dtextn1" placeholder="Digite um número"> /
-    <input type="number" name="dtextn2" id="dtextn2" placeholder="Digite um número">
-    <input type="button" value="dividir" onclick="divisao()">
-    <div id="dres">Resultado </div>
-
-    <h2>Multiplicando</h2>
-    <input type="number" name="mtextn1" id="mtextn1" placeholder="Digite um número"> x
-    <input type="number" name="mtextn2" id="mtextn2" placeholder="Digite um número">
-    <input type="button" value="multiplicar" onclick="multiplicacao()">
-    <div id="mres">Resultado </div>
+    <div id="div01">
+        <h1>Treinando JavaScript</h1>
+        <h2>Somando</h2>
+        <input type="number" name="textn1" id="textn1" placeholder="Digite um número"> +
+        <input type="number" name="textn2" id="textn2" placeholder="Digite um número">
+        <input type="button" value="somar" onclick="soma()">
+        <div id="res">Resultado</div>
+        <h2>Subtraindo</h2>
+        <input type="number" name="stextn1" id="stextn1" placeholder="Digite um número"> -
+        <input type="number" name="stextn2" id="stextn2" placeholder="Digite um número">
+        <input type="button" value="subtrair" onclick="subtracao()">
+        <div id="ssres">Resultado </div>
+        <h2>Dividindo</h2>
+        <input type="number" name="dtextn1" id="dtextn1" placeholder="Digite um número"> /
+        <input type="number" name="dtextn2" id="dtextn2" placeholder="Digite um número">
+        <input type="button" value="dividir" onclick="divisao()">
+        <div id="dres">Resultado </div>
+        <h2>Multiplicando</h2>
+        <input type="number" name="mtextn1" id="mtextn1" placeholder="Digite um número"> x
+        <input type="number" name="mtextn2" id="mtextn2" placeholder="Digite um número">
+        <input type="button" value="multiplicar" onclick="multiplicacao()">
+        <div id="mres">Resultado </div>
+    </div>
     
 
     <script>
